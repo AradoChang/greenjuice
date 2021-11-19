@@ -38,6 +38,92 @@ body {
     background-color: #f3f3f3;
 }
 
+/* 모달창 */
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+
+    display: none;
+}
+
+.modal-cont {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 20px;
+    width: 400px;
+    height: 250px;
+    background-color: #fff;
+}
+
+.alert {
+    position: absolute;
+    left: 50%;
+    top: 2.8rem;
+    transform: translateX(-50%);
+    font-size: 3rem;
+}
+
+.modal-tit {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    font-family: 'Noto Sans KR'sans-serif;
+    font-weight: 600;
+    font-size: 1.7rem;
+    letter-spacing: -0.028rem;
+    line-height: 1.5;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.modal-txt {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    font-family: 'Noto Sans KR'sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: #666;
+    letter-spacing: -0.028rem;
+    line-height: 1.5;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.modal-close {
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    width: 12rem;
+    height: 3rem;
+    background-color: #000;
+    transform: translate(-50%, -50%);
+    border: none;
+    font-family: 'Noto Sans KR'sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #fff;
+    letter-spacing: -0.028rem;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.modal-close:hover {
+    background-color: #8eb5f0;
+}
+
 /* 공통 클래스 */
 .container {
     position: relative;
@@ -74,7 +160,7 @@ body {
     margin-bottom: 3rem;
 }
 
-/* 위로가기 */
+/* 위로가기  */
 .fix {
     position: fixed;
     left: 0;
@@ -95,8 +181,10 @@ body {
     box-shadow: 0.1rem 0 0.8rem rgb(0 0 0 / 10%);
     border: 0.1rem solid #e4e4e4;
     text-align: center;
+
     opacity: 0;
     visibility: hidden;
+
     transition: opacity 0.5s;
 }
 
@@ -994,6 +1082,7 @@ body {
     float: right;
     width: 7.5rem;
     font-family: 'Montserrat', 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Helvetica Neue', Helvetica, sans-serif;
+
     font-size: 1.5rem;
     line-height: 1.4;
     font-weight: 400;
@@ -1051,7 +1140,6 @@ body {
     font-weight: 400;
     line-height: 1.6;
     letter-spacing: -0.05rem;
-    ;
     color: #777;
 }
 
@@ -1162,6 +1250,7 @@ body {
     display: inline-block;
     margin: 0 0.7rem;
 }
+
 .bar::after {
     content: '';
     position: absolute;
@@ -1234,6 +1323,7 @@ body {
     border-bottom: 0.1rem dashed #c6c6c6;
     margin-bottom: 1rem;
 }
+
 .f-site-list dt:first-child {
     border-bottom: 0;
     margin-bottom: 0;
@@ -1244,6 +1334,7 @@ body {
     display: block;
     margin-bottom: 1rem;
 }
+
 .f-site-list dd:last-child {
     margin-bottom: 0;
 }
@@ -1270,6 +1361,7 @@ body {
     font-size: 1.3rem;
     letter-spacing: -0.025rem;
     cursor: pointer;
+
     text-align: left;
     padding: 0 1.5rem;
 }
@@ -1279,6 +1371,7 @@ body {
     right: 1.5rem;
     top: 50%;
     transform: translateY(-50%) rotate(180deg);
+
     display: inline-block;
     width: 1.4rem;
     height: 0.8rem;
