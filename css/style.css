@@ -1,5 +1,5 @@
 @charset 'utf-8';
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap');
 @import url('notosanskr/NotoSansKR.css');
 
 * {
@@ -15,7 +15,7 @@ a {
 }
 
 img {
-    vertical-align: middle;
+    vertical-align: hidden;
     border: 0;
 }
 
@@ -38,93 +38,8 @@ body {
     background-color: #f3f3f3;
 }
 
-/* 모달창 */
-.modal {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 99999;
-
-    display: none;
-}
-
-.modal-cont {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-
-    border-radius: 20px;
-    width: 400px;
-    height: 250px;
-    background-color: #fff;
-}
-
-.alert {
-    position: absolute;
-    left: 50%;
-    top: 2.8rem;
-    transform: translateX(-50%);
-    font-size: 3rem;
-}
-
-.modal-tit {
-    position: absolute;
-    left: 50%;
-    top: 40%;
-    transform: translate(-50%, -50%);
-    font-family: 'Noto Sans KR'sans-serif;
-    font-weight: 600;
-    font-size: 1.7rem;
-    letter-spacing: -0.028rem;
-    line-height: 1.5;
-    text-align: center;
-    white-space: nowrap;
-}
-
-.modal-txt {
-    position: absolute;
-    left: 50%;
-    top: 60%;
-    transform: translate(-50%, -50%);
-    font-family: 'Noto Sans KR'sans-serif;
-    font-weight: 400;
-    font-size: 1.4rem;
-    color: #666;
-    letter-spacing: -0.028rem;
-    line-height: 1.5;
-    text-align: center;
-    white-space: nowrap;
-}
-
-.modal-close {
-    position: absolute;
-    left: 50%;
-    top: 80%;
-    width: 12rem;
-    height: 3rem;
-    background-color: #000;
-    transform: translate(-50%, -50%);
-    border: none;
-    font-family: 'Noto Sans KR'sans-serif;
-    font-weight: 600;
-    font-size: 1.4rem;
-    color: #fff;
-    letter-spacing: -0.028rem;
-    text-align: center;
-    white-space: nowrap;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.modal-close:hover {
-    background-color: #8eb5f0;
-}
-
 /* 공통 클래스 */
+
 .container {
     position: relative;
     display: block;
@@ -160,7 +75,8 @@ body {
     margin-bottom: 3rem;
 }
 
-/* 위로가기  */
+/* 위로가기 */
+
 .fix {
     position: fixed;
     left: 0;
@@ -177,14 +93,12 @@ body {
     display: block;
     width: 5rem;
     height: 5rem;
-    background-color: #fff;
+    background: #fff;
     box-shadow: 0.1rem 0 0.8rem rgb(0 0 0 / 10%);
     border: 0.1rem solid #e4e4e4;
     text-align: center;
-
     opacity: 0;
     visibility: hidden;
-
     transition: opacity 0.5s;
 }
 
@@ -207,8 +121,8 @@ body {
     position: relative;
     display: block;
     font-size: 1.2rem;
-    font-weight: 700;
     color: #333;
+    font-weight: 700;
     letter-spacing: -0.05rem;
     line-height: 1.4;
 }
@@ -228,7 +142,6 @@ body {
     position: relative;
     display: block;
     background-color: #f3f3f3;
-
 }
 
 .header-top>.container {
@@ -238,7 +151,6 @@ body {
 .header-top-list {
     position: relative;
     display: block;
-
     overflow: hidden;
 }
 
@@ -269,10 +181,8 @@ body {
     content: '';
     position: absolute;
     right: 0;
-
     top: 50%;
     transform: translateY(-50%);
-
     display: block;
     width: 0.1rem;
     height: 1rem;
@@ -283,12 +193,13 @@ body {
     content: none;
 }
 
+
 .header-bottom {
     position: relative;
     display: block;
     background-color: #fff;
     border-top: 0.1rem solid #ddd;
-    border-bottom: 0.1rem solid #ddd;
+    border-bottom: 0.1re, solid #ddd;
     padding-top: 1.8rem;
     padding-bottom: 1.2rem;
 }
@@ -304,7 +215,6 @@ body {
     width: 6.5rem;
     height: 4.7rem;
     background: url('../images/h_logo.png') no-repeat center;
-
     text-indent: 1000rem;
     font-size: 0;
 }
@@ -313,7 +223,7 @@ body {
     position: relative;
     display: block;
     float: left;
-    margin-left: 8rem;
+    margin-left: 8.0rem;
 }
 
 .depth1 {
@@ -325,7 +235,7 @@ body {
     position: relative;
     display: block;
     float: left;
-    margin-right: 6rem;
+    margin-right: 6.0rem;
 }
 
 .depth1>li:last-child {
@@ -335,9 +245,9 @@ body {
 .depth1>li>a {
     position: relative;
     display: inline-block;
-    font-size: 2rem;
-    color: #333;
+    font-size: 2.0rem;
     font-weight: 700;
+    color: #333;
 }
 
 .depth1>li>a:hover {
@@ -356,7 +266,8 @@ body {
     position: relative;
     display: block;
     float: left;
-    margin-right: 3rem;
+    margin-right: 3.0rem;
+
 }
 
 .mem-list>li:last-child {
@@ -365,14 +276,14 @@ body {
 
 .mem-list>li>a {
     position: relative;
-    display: inline-block;
+    display: block;
     width: 3rem;
     height: 3rem;
     background: url('../images/ico_sprite_pc.png') no-repeat;
-
     font-size: 0rem;
     text-indent: -1000rem;
 }
+
 
 .ico-search {
     background-position: -1.1rem -1.1rem !important;
@@ -385,6 +296,7 @@ body {
 .ico-bucket {
     background-position: -9rem -1.1rem !important;
 }
+
 
 /* 비주얼 영역 */
 .visual {
@@ -402,10 +314,9 @@ body {
 }
 
 .customer>.container {
-    background-color: #fff;
+    background: #fff;
     box-shadow: 0 0.3rem 1.5rem rgb(77 77 77 / 5%);
     padding: 3rem;
-
     margin-top: -9rem;
 }
 
@@ -430,19 +341,84 @@ body {
     display: block;
     width: 46rem;
     height: 10rem;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.sw-cs {}
+
+.sw-cs a {
+    display: block;
+    height: 100%;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 400;
+}
+
+.cs-icon {
+    display: block;
+    width: 3.5rem;
+    height: 4rem;
+    margin: 0 auto;
+    background: url('../images/ico_sprite_pc.png') no-repeat;
     overflow: hidden;
-    background-color: #8fcb64;
+    margin: 1.5rem auto;
+}
+
+.cs-icon-1 {
+    background-position: -1.5rem -8.5rem;
+}
+
+.cs-icon-2 {
+    background-position: -7rem -8.5rem;
+}
+
+.cs-icon-3 {
+    width: 4rem;
+    background-position: -12.1rem -8.5rem;
+}
+
+.cs-icon-4 {
+    width: 4rem;
+    background-position: -17.5rem -8.5rem;
+}
+
+.cs-icon-5 {
+    background-position: -57.1rem -8.5rem;
+}
+
+.cs-icon-6 {
+    width: 4.5rem;
+    background-position: -62rem -8.5rem;
+}
+
+.sw-cs-pg {
+    top: -1rem;
+    right: 0;
+}
+
+.sw-cs-pg .swiper-pagination-bullet {
+    background:#ddd !important;
+    opacity: 1.0 !important;
+    margin: 0 0.3rem !important;
+}
+
+.sw-cs-pg .swiper-pagination-bullet-active {
+    background: #47ad1a !important;
 }
 
 .customer-login {
     position: relative;
     display: block;
-
     padding-right: 21rem;
-
     font-size: 3.2rem;
-    font-weight: 400;
     color: #333;
+    font-weight: 400;
     line-height: 1.375;
     letter-spacing: -0.15rem;
 }
@@ -457,7 +433,7 @@ body {
     bottom: 0.2rem;
     display: block;
     padding: 0 4rem;
-    background-color: #47ad1a;
+    background: #47ad1a;
     line-height: 5rem;
     color: #fff;
     font-size: 1.5rem;
@@ -485,12 +461,12 @@ body {
     width: 27rem;
     height: 41rem;
     border: 0.1rem solid #ccc;
-    background-color: #fff;
-    margin-left: 2rem;
+    background: #fff;
+    margin-right: 2rem;
 }
 
-.today-good-box:first-child {
-    margin-left: 0;
+.today-good-box:last-child {
+    margin-right: 0;
 }
 
 .today-good-link {
@@ -513,8 +489,9 @@ body {
     font-size: 1.8rem;
     color: #333;
     font-weight: 500;
-    letter-spacing: -0.05rem;
     line-height: 1.35;
+    letter-spacing: -0.05rem;
+    padding: 1.5rem 0;
 
     padding: 1.5rem 0;
     text-align: center;
@@ -535,8 +512,8 @@ body {
 .today-good-price em,
 .best-good-price em {
     font-style: normal;
-    color: #999;
     font-size: 1.5rem;
+    color: #999;
 }
 
 .good-icon {
@@ -584,32 +561,21 @@ body {
     display: block;
 }
 
-.good-heart {
-    position: absolute;
-    right: 2rem;
-    top: 2rem;
-    display: block;
-    width: 2.7rem;
-    height: 2.3rem;
-    background: url('../images/ico_sprite_pc.png') no-repeat;
-    background-position: -25rem -1rem;
-}
-
 .today-more {
     position: relative;
     display: block;
     margin-top: 5rem;
     text-align: center;
-}
-
-.today-more-link {
-    position: relative;
-    display: inline-block;
     font-size: 2.2rem;
     color: #555;
     font-weight: 400;
     letter-spacing: -0.05rem;
     line-height: 1.4;
+}
+
+.today-more-link {
+    position: relative;
+    display: inline-block;
 }
 
 .today-more-link::after {
@@ -621,16 +587,27 @@ body {
     background: url('../images/ico_sprite_pc.png') no-repeat;
     background-position: -67.4rem -8rem;
 
-    vertical-align: -0.7rem;
+    vertical-align: -0.6rem;
     margin-left: 1rem;
+}
+
+.good-heart {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    display: block;
+    width: 2.7rem;
+    height: 2.3rem;
+    background: url('../images/ico_sprite_pc.png') no-repeat;
+    background-position: -25rem -1rem;
 }
 
 /* 베스트 상품 영역 */
 .best {
     position: relative;
     display: block;
-    padding: 11rem 0;
-    background-color: #fff;
+    padding: 10rem 0;
+    background: #fff;
 }
 
 .best-left {
@@ -657,7 +634,7 @@ body {
     display: block;
     width: 100%;
     height: 5.5rem;
-    background-color: #ef821f;
+    background: #ef821f;
     box-shadow: 0.4rem 0 1.5rem rgb(0 0 0 / 10%);
     transition: top 0.5s;
 }
@@ -762,14 +739,14 @@ body {
     font-size: 1.6rem;
     color: #999;
     line-height: 1.4;
-    letter-spacing: -0.05rem;
+    letter-spacing: -0.5;
     font-weight: 400;
 }
 
 .best-rank em {
     font-style: normal;
-    font-size: 2.6rem;
     color: #333;
+    font-size: 2.6rem;
     line-height: 2rem;
 }
 
@@ -813,14 +790,13 @@ body {
     font-size: 1.8rem;
     color: #999;
     letter-spacing: -0.05rem;
-    font-weight: 400;
 }
 
 .best-rank-1 em {
-    color: #429e31;
-    font-style: normal;
     font-size: 6rem;
     font-weight: 500;
+    font-style: normal;
+    color: #429e31;
 }
 
 .best-rank-1-txt {
@@ -836,10 +812,10 @@ body {
 
 .best-rank-1-txt>span:nth-child(1) {
     font-size: 3.4rem;
+    color: #333;
     font-weight: 500;
     letter-spacing: -0.408rem;
     line-height: 4.9rem;
-    color: #333;
     margin-bottom: 0.5rem;
 }
 
@@ -865,12 +841,12 @@ body {
     display: block;
 }
 
-/* 배너  1 영역 */
+/* 배너 1 영역 */
 .banner-1 {
     position: relative;
     display: block;
     text-align: center;
-    background-color: #ac96e9;
+    background: #ac96e9;
 }
 
 /* FAQ 영역 */
@@ -878,9 +854,8 @@ body {
     position: relative;
     display: block;
     padding: 10rem 0;
-    background-color: #f4f4f4;
+    background: #f4f4f4;
 }
-
 
 .faq .section-title {
     font-weight: 500;
@@ -895,7 +870,7 @@ body {
     color: #777;
     font-weight: 500;
     line-height: 1.4;
-    letter-spacing: -0.05rem;
+    letter-spacing: 0.05rem;
 }
 
 .faq-link::after {
@@ -905,7 +880,7 @@ body {
     width: 0.7rem;
     height: 1rem;
     background: url('../images/ico_sprite_pc.png') no-repeat;
-    background-position: -26.8rem -5rem;
+    background-position: -26.9rem -5rem;
     margin-left: 0.5rem;
 }
 
@@ -920,7 +895,7 @@ body {
     float: left;
     width: 27rem;
     height: 15rem;
-    background-color: #fff;
+    background: #fff;
     border: 0.1rem solid rgba(0, 0, 0, 0.07);
     margin-right: 2rem;
     padding: 3.5rem 2.5rem;
@@ -930,14 +905,14 @@ body {
     margin-right: 0;
 }
 
-.faq-box>a::before {
+.faq-box a::before {
     content: '';
     position: absolute;
     left: 2.3rem;
     top: 3.8rem;
     display: block;
     width: 5.8rem;
-    height: 5.4rem;
+    height: 5.3rem;
     background: url('../images/ico_sprite_pc.png') no-repeat;
 }
 
@@ -985,23 +960,21 @@ body {
     position: relative;
     display: block;
     text-align: center;
-
 }
 
 .bg-1 {
-    background-color: #eff4fa;
+    background: #eff4fa;
 }
 
 .bg-2 {
-    background-color: #f9f9f9;
+    background: #f9f9f9;
 }
-
 
 /* 커뮤니티 영역 */
 .community {
     position: relative;
     display: block;
-    background-color: #fff;
+    background: #fff;
     padding: 4.5rem 0;
 }
 
@@ -1028,8 +1001,7 @@ body {
 .notice-more {
     position: absolute;
     right: 0;
-    top: 0.9rem;
-
+    top: 1rem;
     display: block;
     font-family: 'Montserrat', 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 1.5rem;
@@ -1070,7 +1042,7 @@ body {
     width: 43.5rem;
     font-family: 'Montserrat', 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 1.4rem;
-    line-height: 1.4;
+    line-height: 1.96rem;
     font-weight: 400;
     letter-spacing: -0.05rem;
     color: #666;
@@ -1082,8 +1054,7 @@ body {
     float: right;
     width: 7.5rem;
     font-family: 'Montserrat', 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Helvetica Neue', Helvetica, sans-serif;
-
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     line-height: 1.4;
     font-weight: 400;
     letter-spacing: -0.05rem;
@@ -1094,7 +1065,7 @@ body {
     position: relative;
     display: block;
     float: left;
-    width: 28.5rem;
+    width: 18.5rem;
 }
 
 .cs-phone {
@@ -1102,11 +1073,12 @@ body {
     display: block;
     font-family: 'Montserrat', 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 2.7rem;
+    line-height: 1.4;
     font-weight: 400;
-    line-height: 3.78rem;
     letter-spacing: -0.05rem;
     color: #000;
-    margin-top: 2.6rem;
+    margin-top: 2rem;
+    white-space: nowrap;
 }
 
 .cs-phone span {
@@ -1114,15 +1086,17 @@ body {
     display: block;
     font-family: 'Montserrat', 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 1.4rem;
-    font-weight: 400;
     line-height: 1.96rem;
+    font-weight: 400;
     letter-spacing: -0.05rem;
-    color: rgb(153, 153, 153);
+    color: #999;
     margin-top: 0;
 }
 
 .cs-phone span em {
     font-style: normal;
+    font-size: 1.7rem;
+    line-height: 2.36rem;
 }
 
 .de {
@@ -1136,9 +1110,9 @@ body {
     position: relative;
     display: block;
     font-family: 'Montserrat', 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: 1.4rem;
-    font-weight: 400;
+    font-size: 1.5rem;
     line-height: 1.6;
+    font-weight: 400;
     letter-spacing: -0.05rem;
     color: #777;
 }
@@ -1146,24 +1120,26 @@ body {
 .de-link {
     position: relative;
     display: inline-block;
-    border: 0.1rem solid #ccc;
+    font-family: 'Montserrat', 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 1.3rem;
     line-height: 2.8rem;
-    text-align: center;
+    font-weight: 400;
+    letter-spacing: -0.05rem;
     color: #777;
-    margin: 0.5rem 0rem 0rem;
-    padding: 0rem 1rem;
+    text-align: center;
+    margin-top: 0.5rem;
+    padding: 0rem 0.5rem;
+    border: 0.01rem solid #ccc;
 }
 
 .de-link::after {
     content: '';
     position: relative;
     display: inline-block;
-    width: 0.8rem;
-    height: 1rem;
+    width: 0.5rem;
+    height: 0.7rem;
     background: url('../images/ico_sprite_pc.png') no-repeat;
     background-position: -28.5rem -5rem;
-    vertical-align: -0.2rem;
     margin-left: 0.5rem;
 }
 
@@ -1176,30 +1152,32 @@ body {
 .f-top {
     position: relative;
     display: block;
-    background-color: #f7f7f7;
+    background: #f7f7f7;
+    border-top: 0.1rem solid #e5e5e5;
+    border-bottom: 0.1rem solid #e5e5e5;
 }
 
-.f-top-list {
+.brandinfo {
     position: relative;
     display: block;
 }
 
-.f-top-list>li {
+.brandinfo>li {
     position: relative;
     display: block;
     float: left;
-    padding: 0 1.2rem;
+    padding: 0rem 1.2rem;
 }
 
-.f-top-list>li:first-child {
+.brandinfo>li:first-child {
     padding-left: 0;
 }
 
-.f-top-list>li:last-child {
+.brandinfo>li:last-child {
     padding-right: 0;
 }
 
-.f-top-list>li::after {
+.brandinfo>li::after {
     content: '';
     position: absolute;
     right: 0;
@@ -1208,29 +1186,33 @@ body {
     display: block;
     width: 0.1rem;
     height: 1rem;
-    background-color: #777;
+    background: #c6c6c6;
 }
 
-.f-top-list>li:last-child::after {
+.brandinfo>li:last-child::after {
     content: none;
 }
 
-.f-top-list>li>a {
+.brandinfo>li>a {
     position: relative;
     display: block;
-    font-family: 'Montserrat', 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 1.4rem;
-    font-weight: 400;
-    line-height: 4.8rem;
     color: #777;
+    letter-spacing: 0;
+    line-height: 4.8rem;
+    font-weight: 400;
+}
 
+.brandinfo>li:nth-child(2)>a {
+    color: #333;
+    font-weight: 700;
 }
 
 .f-bottom {
     position: relative;
     display: block;
     padding: 3.5rem 0;
-    background-color: #fff;
+    background: #fff;
 }
 
 .f-logo {
@@ -1239,7 +1221,7 @@ body {
     margin-right: 3.5rem;
 }
 
-.f-copy {
+.f-text {
     position: relative;
     display: block;
     width: 81rem;
@@ -1266,17 +1248,17 @@ body {
     position: relative;
     display: block;
     font-size: 1.2rem;
-    font-weight: 400;
-    letter-spacing: -0.075rem;
     color: #7e7e7e;
+    font-weight: 400;
     line-height: 1.8;
+    letter-spacing: -0.075rem;
     white-space: nowrap;
     margin-bottom: 0.5rem;
 }
 
 .f-address a strong {
-    color: #333;
     font-weight: 700;
+    color: #333;
     text-decoration: underline;
 }
 
@@ -1285,7 +1267,7 @@ body {
     font-weight: 400;
 }
 
-.f-copy-txt {
+.f-copy {
     position: relative;
     display: block;
     font-size: 1.1rem;
@@ -1308,9 +1290,8 @@ body {
     left: 0;
     bottom: 3.2rem;
     display: none;
-
     width: 100%;
-    background-color: #fff;
+    background: #fff;
     padding: 1.5rem;
     border: 0.1rem solid #c5c5c5;
     border-radius: 1.3rem;
@@ -1325,7 +1306,7 @@ body {
 }
 
 .f-site-list dt:first-child {
-    border-bottom: 0;
+    border-bottom: none;
     margin-bottom: 0;
 }
 
@@ -1356,12 +1337,11 @@ body {
     line-height: 3rem;
     border: 0.1rem solid #c6c6c6;
     border-radius: 1.6rem;
-    background-color: #fff;
+    background: #fff;
     color: #555;
     font-size: 1.3rem;
     letter-spacing: -0.025rem;
     cursor: pointer;
-
     text-align: left;
     padding: 0 1.5rem;
 }
@@ -1371,7 +1351,6 @@ body {
     right: 1.5rem;
     top: 50%;
     transform: translateY(-50%) rotate(180deg);
-
     display: inline-block;
     width: 1.4rem;
     height: 0.8rem;
